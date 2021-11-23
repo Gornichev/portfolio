@@ -1,7 +1,7 @@
 @import "variables"
 
 body
-
+	font-family: 'Roboto Slab', serif
 	background-color: $mainColor
 	font-size: 16px
 	font-weight: normal
@@ -13,6 +13,13 @@ body
 
 .header
 	padding-top: 40px
+	position: relative
+	z-index: 102
+	color: #b8b8c9
+
+	.header-title
+		position: relative
+		z-index: 102
 
 	.icon-menu
 		text-decoration: none
@@ -21,16 +28,24 @@ body
 		float: right
 
 	.card
-		background-color: $lighterColor
+		background-color: #f3e9e9
+		position: absolute
+		top: 82px
+		right: 37px
+		width: 400px
+		list-style: none
+
 
 	.nav-header
+		position: relative
+		z-index: 102
 
 		.nav-list
 			display: flex
 			list-style: none
 
 		.nav-list li
-			margin-right: 20px
+			margin-right: 40px
 
 			.figure
 				color: #fff
@@ -43,3 +58,25 @@ body
 				text-transform: uppercase
 				line-height: 30px
 				font-size: 13px
+.section-background
+
+
+	.section-video-background
+		width: 100%
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		overflow: hidden
+		z-index: 100
+
+		.video-background
+			width: 100%
+			z-index: 100
+
+
+
+
+
+

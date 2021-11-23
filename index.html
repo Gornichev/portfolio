@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="int/css/common.css">
 </head>
 <body>
-<header class="header">
+<header class="header fixed-top">
     <div class="container">
         <div class="row align-items-center">
             <div class="col">
@@ -22,17 +22,16 @@
             <div class="col-auto">
                 <nav class="nav-header">
                     <ul class="nav-list">
-                        <li>About</li>
-                        <li>Work</li>
-                        <li>Contact</li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Contact</a></li>
                         <li><span class="figure">UA</span></li>
                         <li><span class="figure">EN</span></li>
                         <li>
                             <p>
-                                <a class="icon-menu" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="icon-menu d-md-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                     Menu
                                 </a>
-
                             </p>
                             <div class="collapse" id="collapseExample">
                                 <div class="card card-body">
@@ -52,6 +51,14 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+        <div class="section-background">
+            <div class="section-video-background">
+                <video preload="auto" autoplay muted loop class="video-background" src="int/img/video/storm.mp4">
+                    <source src="int/img/video/storm.mp4" type="video/mp4">
+                    <source src="int/img/video/hexagon%20(video-converter.com).webm" type="video/webm">
+                </video>
             </div>
         </div>
     </div>
