@@ -1,17 +1,28 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "../icon"
- *   |         ^^^^^^^^^
- *   '
- *   common.sass 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"../icon\"\d\a   \2502          ^^^^^^^^^\a   \2575 \a   common.sass 1:9  root stylesheet";
+@import "../icon/style.css";
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eee6e6;
+  font-size: 16px;
+  font-weight: normal;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+
+.container {
+  max-width: 1170px;
+}
+
+.header {
+  padding-top: 40px;
+}
+.header .icon-menu {
+  text-decoration: none;
+  color: #4f4f2e;
+  font-size: 20px;
+  float: right;
+}
+.header .card {
+  background-color: #1a1e21;
+}
+
+/*# sourceMappingURL=common.css.map */
