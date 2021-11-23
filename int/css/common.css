@@ -143,6 +143,7 @@ body {
 .intro .intro-figure:hover {
   transform: rotateY(180deg);
   transition: 1s;
+  -webkit-transform: translate(15px);
 }
 
 /*# sourceMappingURL=common.css.map */
