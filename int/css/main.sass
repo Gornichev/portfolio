@@ -16,6 +16,8 @@ body
 	position: relative
 	z-index: 102
 	color: #b8b8c9
+	margin-bottom: 80px
+	background-color: #674152
 
 	.header-title
 		position: relative
@@ -46,18 +48,28 @@ body
 
 		.nav-list li
 			margin-right: 40px
+			color: $mainColor
 
-			.figure
-				color: #fff
-				border: 1px solid $warningColor
-				border-radius: 100%
-				width: 30px
-				height: 30px
-				text-align: center
-				display: inline-block
-				text-transform: uppercase
-				line-height: 30px
-				font-size: 13px
+		.nav-menu-link
+			font-size: 20px
+			letter-spacing: 0.15em
+			font-weight: 300
+			line-height: 20px
+			text-decoration: none
+			color: $mainColor
+
+		.figure
+			color: #fff
+			border: 1px solid $warningColor
+			border-radius: 100%
+			width: 30px
+			height: 30px
+			text-align: center
+			display: inline-block
+			text-transform: uppercase
+			line-height: 30px
+			font-size: 13px
+
 .section-background
 
 
@@ -74,6 +86,54 @@ body
 		.video-background
 			width: 100%
 			z-index: 100
+
+.intro
+	position: relative
+	z-index: 102
+	padding: 50px 50px 0
+	border: 1px solid #ff3030
+
+	.intro-text
+		color: $mainColor
+		font-size: 60px
+		letter-spacing: 0.15em
+		font-weight: 300
+		line-height: 20px
+		margin-bottom: 40px
+		text-shadow: 1px 1px 2px #444
+		text-align: center
+		padding: 30px
+		border: 1px solid #f13e3e
+
+	.intro-title
+		color: $mainColor
+		font-size: 40px
+		letter-spacing: 0.15em
+		font-weight: 500
+		line-height: 40px
+		padding-left: 70px
+		margin-bottom: 20px
+		border: 1px solid #f13e3e
+
+	.intro-img
+		position: relative
+		z-index: 102
+		min-width: 450px
+		max-height: 450px
+		opacity: 0.7
+		margin: 0 auto
+
+	.intro-figure
+		padding: 30px
+		border: 1px solid #f13e3e
+		text-align: center
+		width: 400px
+		height: 200px
+
+	.intro-figure:hover
+		transform: rotateY(360deg)
+		transition: 2s
+
 
 
 

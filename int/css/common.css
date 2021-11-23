@@ -18,6 +18,8 @@ body {
   position: relative;
   z-index: 102;
   color: #b8b8c9;
+  margin-bottom: 80px;
+  background-color: #674152;
 }
 .header .header-title {
   position: relative;
@@ -47,8 +49,17 @@ body {
 }
 .header .nav-header .nav-list li {
   margin-right: 40px;
+  color: #ffffff;
 }
-.header .nav-header .nav-list li .figure {
+.header .nav-header .nav-menu-link {
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  font-weight: 300;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header .nav-header .figure {
   color: #fff;
   border: 1px solid #e32b2b;
   border-radius: 100%;
@@ -74,6 +85,54 @@ body {
 .section-background .section-video-background .video-background {
   width: 100%;
   z-index: 100;
+}
+
+.intro {
+  position: relative;
+  z-index: 102;
+  padding: 50px 50px 0;
+  border: 1px solid #ff3030;
+}
+.intro .intro-text {
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: 0.15em;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px #444;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #f13e3e;
+}
+.intro .intro-title {
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 70px;
+  margin-bottom: 20px;
+  border: 1px solid #f13e3e;
+}
+.intro .intro-img {
+  position: relative;
+  z-index: 102;
+  min-width: 450px;
+  max-height: 450px;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+.intro .intro-figure {
+  padding: 30px;
+  border: 1px solid #f13e3e;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+}
+.intro .intro-figure:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
 }
 
 /*# sourceMappingURL=common.css.map */
