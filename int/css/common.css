@@ -129,10 +129,12 @@ body {
   text-align: center;
   width: 400px;
   height: 200px;
+  -webkit-transition: 1s ease;
+  transition: 1s;
 }
 .intro .intro-figure:hover {
-  transform: rotateY(360deg);
-  transition: 2s;
+  transform: rotateY(180deg);
+  transition: 1s;
 }
 
 /*# sourceMappingURL=common.css.map */
