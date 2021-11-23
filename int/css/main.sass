@@ -2,7 +2,7 @@
 
 body
 	font-family: 'Open Sans', sans-serif
-	background-color: $MainColor
+	background-color: $mainColor
 	font-size: 16px
 	font-weight: normal
 	min-height: 100vh
@@ -16,8 +16,30 @@ body
 
 	.icon-menu
 		text-decoration: none
-		color: #4f4f2e
+		color: $lighterColor
 		font-size: 20px
 		float: right
+
 	.card
-		background-color: #1a1e21
+		background-color: $lighterColor
+
+	.nav-header
+
+		.nav-list
+			display: flex
+			list-style: none
+
+		.nav-list li
+			margin-right: 20px
+
+			.figure
+				color: #fff
+				border: 1px solid $warningColor
+				border-radius: 100%
+				width: 30px
+				height: 30px
+				text-align: center
+				display: inline-block
+				text-transform: uppercase
+				line-height: 30px
+				font-size: 13px

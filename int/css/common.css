@@ -1,7 +1,8 @@
-@import "../icon/style.css";
+@import "../icons/style.css";
+@import "../fonts/onlinefontconverter.com/converted-files/font.css";
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #eee6e6;
+  background-color: #524a4a;
   font-size: 16px;
   font-weight: normal;
   min-height: 100vh;
@@ -17,12 +18,31 @@ body {
 }
 .header .icon-menu {
   text-decoration: none;
-  color: #4f4f2e;
+  color: #f3e9e9;
   font-size: 20px;
   float: right;
 }
 .header .card {
-  background-color: #1a1e21;
+  background-color: #f3e9e9;
+}
+.header .nav-header .nav-list {
+  display: flex;
+  list-style: none;
+}
+.header .nav-header .nav-list li {
+  margin-right: 20px;
+}
+.header .nav-header .nav-list li .figure {
+  color: #fff;
+  border: 1px solid #e32b2b;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=common.css.map */
