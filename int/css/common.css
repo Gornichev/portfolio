@@ -17,11 +17,15 @@ body {
 
 .header {
   padding-top: 40px;
-  position: relative;
-  z-index: 102;
+  position: fixed;
   color: #b8b8c9;
-  margin-bottom: 80px;
-  background-color: #674152;
+  background: rgba(93, 93, 93, 0);
+  border-radius: 0;
+  border: none;
+  height: 80px;
+  font-weight: 300;
+  margin-bottom: 0;
+  z-index: 101;
 }
 .header .header-title {
   position: relative;
@@ -79,6 +83,30 @@ body {
   font-size: 13px;
 }
 
+.section-background {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.section-background .background {
+  background-image: url("../img/background.jpg");
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.section-background .background .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.3);
+  z-index: 100;
+}
 .section-background .section-video-background {
   width: 100%;
   position: fixed;
@@ -87,7 +115,6 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: 100;
 }
 .section-background .section-video-background .video-background {
   width: 100%;
@@ -96,9 +123,12 @@ body {
 
 .intro {
   position: relative;
-  z-index: 102;
-  padding: 50px 50px 0;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50px 20px 0;
   border: 1px solid #ff3030;
+  margin-top: 150px;
 }
 .intro .intro-text {
   color: #ffffff;
@@ -123,7 +153,6 @@ body {
   text-shadow: 1px 1px 2px #444;
 }
 .intro .intro-img {
-  position: relative;
   z-index: 102;
   min-width: 450px;
   max-height: 450px;
@@ -134,7 +163,6 @@ body {
   padding: 30px;
   border: 1px solid #f13e3e;
   text-align: center;
-  width: 400px;
   height: 200px;
   margin: 0 auto;
   -webkit-transition: 1s ease;
