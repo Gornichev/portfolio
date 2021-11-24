@@ -2,7 +2,7 @@
 @import "../fonts/onlinefontconverter.com/converted-files/font.css";
 body {
   font-family: "Roboto Slab", serif;
-  background-color: #ffffff;
+  background-color: #a9a4a4;
   font-size: 16px;
   font-weight: normal;
   min-height: 100vh;
@@ -16,25 +16,27 @@ body {
 }
 
 .header {
-  padding-top: 40px;
+  padding: 40px 0 20px;
   position: fixed;
   color: #b8b8c9;
-  background: rgba(93, 93, 93, 0);
+  background: rgba(19, 17, 17, 0.57);
   border-radius: 0;
   border: none;
-  height: 80px;
+  height: 100px;
   font-weight: 300;
   margin-bottom: 0;
-  z-index: 101;
+  transition: all 0.3s ease;
 }
 .header .header-title {
   position: relative;
   z-index: 102;
-  color: #f3e9e9;
   font-size: 40px;
   line-height: 1.5;
   font-weight: 600;
-  text-shadow: 1px 1px 2px #444;
+  text-shadow: 1px 1px 2px rgba(68, 68, 68, 0.85);
+  background: -webkit-linear-gradient(left, #ff3a3a, #fff8f8 1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .header .icon-menu {
   text-decoration: none;
@@ -60,15 +62,18 @@ body {
 }
 .header .nav-header .nav-list li {
   margin-right: 40px;
-  color: #ffffff;
+  color: #a9a4a4;
 }
 .header .nav-header .nav-menu-link {
   font-size: 24px;
   letter-spacing: 0.15em;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 20px;
   text-decoration: none;
-  color: #ffffff;
+  text-shadow: 1px 1px 2px #444;
+  background: -webkit-linear-gradient(left, white 74%, red 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .header .nav-header .figure {
   color: #fff;
@@ -93,7 +98,6 @@ body {
 .section-background .background {
   background-image: url("../img/background.jpg");
   height: 100%;
-  overflow: auto;
   width: 100%;
 }
 .section-background .background .background-overlay {
@@ -104,7 +108,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(30, 30, 30, 0.3);
+  background: rgba(30, 30, 30, 0.21);
   z-index: 100;
 }
 .section-background .section-video-background {
@@ -131,26 +135,45 @@ body {
   margin-top: 150px;
 }
 .intro .intro-text {
-  color: #ffffff;
-  font-size: 60px;
+  color: #a9a4a4;
+  font-size: 40px;
   letter-spacing: 0.15em;
   font-weight: 300;
   line-height: 20px;
   margin-bottom: 40px;
-  text-shadow: 1px 1px 2px #444;
   text-align: center;
   padding: 30px;
   border: 1px solid #f13e3e;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(left, white 40%, red 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px #444;
 }
 .intro .intro-title {
-  color: #ffffff;
+  color: #a9a4a4;
   font-size: 40px;
   letter-spacing: 0.15em;
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 20px;
-  border: 1px solid #f13e3e;
+  border: 1px solid #e32b2b;
   text-shadow: 1px 1px 2px #444;
+}
+.intro .intro-title a {
+  text-decoration: none;
+}
+.intro .intro-link-right {
+  text-shadow: 1px 1px 2px #444;
+  background: -webkit-linear-gradient(left, white 74%, red 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro .intro-link-left {
+  text-shadow: 1px 1px 2px rgba(68, 68, 68, 0.85);
+  background: -webkit-linear-gradient(left, #ff3a3a, #fff8f8 1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .intro .intro-img {
   z-index: 102;
@@ -167,6 +190,7 @@ body {
   margin: 0 auto;
   -webkit-transition: 1s ease;
   transition: 1s;
+  text-decoration: none;
 }
 .intro .intro-figure:hover {
   transform: rotateY(180deg);
