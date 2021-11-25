@@ -1,5 +1,155 @@
 @import "../icons/style.css";
 @import "../fonts/onlinefontconverter.com/converted-files/font.css";
+.content {
+  height: 160px;
+  overflow: hidden;
+  font-size: 35px;
+  line-height: 40px;
+  text-shadow: 1px 1px 2px #444;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000003b;
+  padding: 40px;
+}
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+.content__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%, 95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+@-o-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-o-keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%, 95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+@-moz-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%, 95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%, 12.66%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%, 45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%, 62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%, 79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%, 95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
 body {
   font-family: "Roboto Slab", serif;
   background-color: #a9a4a4;
@@ -19,7 +169,7 @@ body {
   padding: 40px 0 20px;
   position: fixed;
   color: #b8b8c9;
-  background: rgba(19, 17, 17, 0.57);
+  background: rgba(19, 17, 17, 0.09);
   border-radius: 0;
   border: none;
   height: 100px;
@@ -34,9 +184,8 @@ body {
   line-height: 1.5;
   font-weight: 600;
   text-shadow: 1px 1px 2px rgba(68, 68, 68, 0.85);
-  background: -webkit-linear-gradient(left, #ff3a3a, #fff8f8 1%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #0000003b;
 }
 .header .icon-menu {
   text-decoration: none;
@@ -71,13 +220,12 @@ body {
   line-height: 20px;
   text-decoration: none;
   text-shadow: 1px 1px 2px #444;
-  background: -webkit-linear-gradient(left, white 74%, red 40%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #0000003b;
 }
 .header .nav-header .figure {
   color: #fff;
-  border: 1px solid #e32b2b;
+  border: 1px solid #150a0a;
   border-radius: 100%;
   width: 30px;
   height: 30px;
@@ -96,7 +244,6 @@ body {
   top: 0;
 }
 .section-background .background {
-  background-image: url("../img/background.jpg");
   height: 100%;
   width: 100%;
 }
@@ -108,7 +255,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgba(30, 30, 30, 0.21);
+  background: rgba(30, 30, 30, 0.11);
   z-index: 100;
 }
 .section-background .section-video-background {
@@ -131,8 +278,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   padding: 50px 20px 0;
-  border: 1px solid #ff3030;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 .intro .intro-text {
   color: #a9a4a4;
@@ -145,7 +291,6 @@ body {
   padding: 30px;
   border: 1px solid #f13e3e;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(left, white 40%, red 40%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px 2px #444;
@@ -157,45 +302,14 @@ body {
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 20px;
-  border: 1px solid #e32b2b;
+  border: 1px solid #150a0a;
   text-shadow: 1px 1px 2px #444;
 }
-.intro .intro-title a {
-  text-decoration: none;
-}
-.intro .intro-link-right {
-  text-shadow: 1px 1px 2px #444;
-  background: -webkit-linear-gradient(left, white 74%, red 40%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.intro .intro-link-left {
-  text-shadow: 1px 1px 2px rgba(68, 68, 68, 0.85);
-  background: -webkit-linear-gradient(left, #ff3a3a, #fff8f8 1%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.intro .intro-img {
-  z-index: 102;
-  min-width: 450px;
-  max-height: 450px;
-  opacity: 0.7;
-  margin: 0 auto;
-}
-.intro .intro-figure {
-  padding: 30px;
-  border: 1px solid #f13e3e;
-  text-align: center;
-  height: 200px;
-  margin: 0 auto;
-  -webkit-transition: 1s ease;
-  transition: 1s;
-  text-decoration: none;
-}
-.intro .intro-figure:hover {
-  transform: rotateY(180deg);
-  transition: 1s;
-  -webkit-transform: translate(15px);
+
+.intro-img-box {
+  box-shadow: 10px 5px 5px black;
+  max-height: 600px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=common.css.map */
