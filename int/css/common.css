@@ -176,6 +176,10 @@ body {
   margin-bottom: 0;
   transition: all 0.3s ease;
   z-index: 101;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 .nav-group .header-title {
   position: relative;
@@ -186,6 +190,7 @@ body {
   text-shadow: 1px 1px 2px rgba(68, 68, 68, 0.85);
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000003b;
+  left: 10%;
 }
 .nav-group .icon-menu {
   text-decoration: none;
@@ -242,6 +247,7 @@ body {
   right: 0;
   top: 0;
   margin-bottom: 100px;
+  position: absolute;
 }
 .section-background .background {
   height: 100%;
@@ -266,7 +272,6 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  max-height: 650px;
 }
 .section-background .section-video-background .video-background {
   width: 100%;

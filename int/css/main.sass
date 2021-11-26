@@ -25,7 +25,10 @@ body
 	margin-bottom: 0
 	transition: all .3s ease
 	z-index: 101
-
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
 
 	.header-title
 		position: relative
@@ -34,6 +37,7 @@ body
 		line-height: 1.5
 		font-weight: 600
 		@include side-left
+		left: 10%
 
 
 	.icon-menu
@@ -89,6 +93,7 @@ body
 	right: 0
 	top: 0
 	margin-bottom: 100px
+	position: absolute
 
 	.background
 		//background-image: url("../img/background.jpg")
@@ -114,8 +119,6 @@ body
 		right: 0
 		bottom: 0
 		overflow: hidden
-		max-height: 650px
-
 
 		.video-background
 			width: 100%
