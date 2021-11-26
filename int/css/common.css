@@ -242,36 +242,16 @@ body {
 }
 
 .section-background {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin-bottom: 100px;
-  position: absolute;
-}
-.section-background .background {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
 }
 .section-background .background .background-overlay {
+  background: rgba(30, 30, 30, 0.11);
+}
+.section-background .section-video-background {
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(30, 30, 30, 0.11);
-  z-index: 100;
-}
-.section-background .section-video-background {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
 }
 .section-background .section-video-background .video-background {
   width: 100%;
