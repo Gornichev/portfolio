@@ -165,9 +165,8 @@ body {
   margin-right: auto;
 }
 
-.header {
+.nav-group {
   padding: 40px 0 20px;
-  position: fixed;
   color: #b8b8c9;
   background: rgba(19, 17, 17, 0.09);
   border-radius: 0;
@@ -176,8 +175,9 @@ body {
   font-weight: 300;
   margin-bottom: 0;
   transition: all 0.3s ease;
+  z-index: 101;
 }
-.header .header-title {
+.nav-group .header-title {
   position: relative;
   z-index: 102;
   font-size: 40px;
@@ -187,13 +187,13 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000003b;
 }
-.header .icon-menu {
+.nav-group .icon-menu {
   text-decoration: none;
   color: #f3e9e9;
   font-size: 20px;
   float: right;
 }
-.header .card {
+.nav-group .card {
   background-color: #f3e9e9;
   position: absolute;
   top: 82px;
@@ -201,19 +201,19 @@ body {
   width: 400px;
   list-style: none;
 }
-.header .nav-header {
+.nav-group .nav-header {
   position: relative;
   z-index: 102;
 }
-.header .nav-header .nav-list {
+.nav-group .nav-header .nav-list {
   display: flex;
   list-style: none;
 }
-.header .nav-header .nav-list li {
+.nav-group .nav-header .nav-list li {
   margin-right: 40px;
   color: #a9a4a4;
 }
-.header .nav-header .nav-menu-link {
+.nav-group .nav-header .nav-menu-link {
   font-size: 24px;
   letter-spacing: 0.15em;
   font-weight: 500;
@@ -223,7 +223,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000003b;
 }
-.header .nav-header .figure {
+.nav-group .nav-header .figure {
   color: #fff;
   border: 1px solid #150a0a;
   border-radius: 100%;
@@ -239,9 +239,9 @@ body {
 .section-background {
   bottom: 0;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
+  margin-bottom: 100px;
 }
 .section-background .background {
   height: 100%;
@@ -266,6 +266,7 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
+  max-height: 650px;
 }
 .section-background .section-video-background .video-background {
   width: 100%;

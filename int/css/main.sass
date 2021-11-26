@@ -14,9 +14,8 @@ body
 	margin-left: auto
 	margin-right: auto
 
-.header
+.nav-group
 	padding: 40px 0 20px
-	position: fixed
 	color: #b8b8c9
 	background: rgba(19, 17, 17, 0.09)
 	border-radius: 0
@@ -25,6 +24,8 @@ body
 	font-weight: 300
 	margin-bottom: 0
 	transition: all .3s ease
+	z-index: 101
+
 
 	.header-title
 		position: relative
@@ -85,9 +86,9 @@ body
 .section-background
 	bottom: 0
 	left: 0
-	position: absolute
 	right: 0
 	top: 0
+	margin-bottom: 100px
 
 	.background
 		//background-image: url("../img/background.jpg")
@@ -113,6 +114,7 @@ body
 		right: 0
 		bottom: 0
 		overflow: hidden
+		max-height: 650px
 
 
 		.video-background
