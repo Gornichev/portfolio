@@ -6,7 +6,7 @@
   font-size: 35px;
   line-height: 40px;
   box-shadow: -9px -9px 6px #fec544;
-  animation: rotate-left 2s 0s linear;
+  animation: rotate-left 1s 0s linear;
   border-radius: 10px;
 }
 .content__container {
@@ -173,11 +173,11 @@
 }
 @keyframes rotate-left {
   from {
-    margin-right: 100px;
+    margin-left: 150px;
     width: 100%;
   }
   to {
-    margin-right: 0;
+    margin-left: 0;
     width: 100%;
   }
 }
@@ -206,6 +206,68 @@ a.btn-reload:hover {
   color: #f3e9e9;
 }
 
+@-webkit-keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    top: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+  50%, 100% {
+    left: 1px;
+    top: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+}
+@-moz-keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+  50%, 100% {
+    left: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+}
+@-ms-keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+  50%, 100% {
+    left: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+}
+@-o-keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+  50%, 100% {
+    left: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+}
+@keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+  50%, 100% {
+    left: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+}
 body {
   font-family: "Roboto Slab", serif;
   background-color: #a9a4a4;
@@ -242,6 +304,8 @@ body {
   height: 50px;
   position: relative;
   left: 18%;
+  -webkit-transition: 1s ease;
+  overflow: hidden;
 }
 .nav-group .icon-menu {
   text-decoration: none;
@@ -279,6 +343,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000003b;
 }
+.nav-group .nav-header .nav-menu-link:hover {
+  background-color: #fec544;
+  transition: 0.5s;
+  -webkit-animation: 0.1s tremor ease-out infinite;
+  animation: 0.1s tremor ease-out infinite;
+}
 .nav-group .nav-header .figure {
   color: #150a0a;
   border: 1px solid #150a0a;
@@ -290,6 +360,11 @@ body {
   text-transform: uppercase;
   line-height: 30px;
   font-size: 13px;
+  text-decoration: none;
+}
+.nav-group .nav-header .figure:hover {
+  background-color: #fec544;
+  transition: 0.5s;
 }
 
 .section-background {
@@ -357,7 +432,13 @@ body {
   box-shadow: 10px 5px 5px #fec544;
   max-height: 600px;
   border-radius: 10px;
-  animation: rotate 2s 0s linear;
+  animation: rotate 1s 0s linear;
+  -webkit-transition: 2s ease;
+}
+
+.intro-img-box:hover {
+  box-shadow: 0 10px 15px 10px #000;
+  transition: 1s;
 }
 
 .header-title {
@@ -370,7 +451,6 @@ body {
   background: -webkit-linear-gradient(left, #fec544, #fff8f8 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0.13);
-  left: 10%;
 }
 
 /*# sourceMappingURL=common.css.map */

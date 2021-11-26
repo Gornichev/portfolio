@@ -9,7 +9,7 @@
 	line-height: 40px
 
 	box-shadow: -9px -9px 6px $goldColor
-	animation: rotate-left 2s 0s linear
+	animation: rotate-left 1s 0s linear
 	border-radius: 10px
 
 
@@ -145,12 +145,12 @@
 
 @keyframes rotate-left
 	from
-		margin-right: 100px
+		margin-left: 150px
 		width: 100%
 
 
 	to
-		margin-right: 0
+		margin-left: 0
 		width: 100%
 
 a.btn-reload
@@ -175,3 +175,62 @@ a.btn-reload
 a.btn-reload:hover
 	background-position: 0 0
 	color: $lighterColor
+
+
+//Tremor
+@-webkit-keyframes tremor
+	0%, 25%
+		left: -1px
+		top: -1px
+		-webkit-transform: translateX(-4%)
+		transform: translateX(-4%)
+
+	50%, 100%
+		left: 1px
+		top: 1px
+		-webkit-transform: translateX(4%)
+		transform: translateX(4%)
+
+@-moz-keyframes tremor
+	0%, 25%
+		left: -1px
+		-webkit-transform: translateX(-4%)
+		transform: translateX(-4%)
+
+	50%, 100%
+		left: 1px
+		-webkit-transform: translateX(4%)
+		transform: translateX(4%)
+
+@-ms-keyframes tremor
+	0%, 25%
+		left: -1px
+		-webkit-transform: translateX(-4%)
+		transform: translateX(-4%)
+
+	50%, 100%
+		left: 1px
+		-webkit-transform: translateX(4%)
+		transform: translateX(4%)
+
+@-o-keyframes tremor
+	0%, 25%
+		left: -1px
+		-webkit-transform: translateX(-4%)
+		transform: translateX(-4%)
+
+	50%, 100%
+		left: 1px
+		-webkit-transform: translateX(4%)
+		transform: translateX(4%)
+
+@keyframes tremor
+	0%, 25%
+		left: -1px
+		-webkit-transform: translateX(-4%)
+		transform: translateX(-4%)
+
+	50%, 100%
+		left: 1px
+		-webkit-transform: translateX(4%)
+		transform: translateX(4%)
