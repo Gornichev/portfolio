@@ -30,15 +30,6 @@ body
 	right: 0
 	left: 0
 
-	.header-title
-		position: relative
-		z-index: 102
-		font-size: 40px
-		line-height: 1.5
-		font-weight: 600
-		@include side-left
-		left: 10%
-
 
 	.icon-menu
 		text-decoration: none
@@ -76,8 +67,8 @@ body
 			@include side-right
 
 		.figure
-			color: #fff
-			border: 1px solid $warningColor
+			color: $warningBlackColor
+			border: 1px solid $warningBlackColor
 			border-radius: 100%
 			width: 30px
 			height: 30px
@@ -95,16 +86,26 @@ body
 
 		.background-overlay
 			background: rgba(30, 30, 30, 0.11)
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			z-index: 100
 
 	.section-video-background
 		height: 100vh
-		position: absolute
+		position: fixed
 		top: 0
 		left: 0
+
 
 		.video-background
 			width: 100%
 			z-index: 100
+			background-size: cover
 
 .intro
 	position: relative
@@ -112,33 +113,41 @@ body
 	left: 50%
 	transform: translateX(-50%)
 	padding: 50px 20px 0
-	margin-top: 200px
+	margin-top: 150px
 
 	.intro-text
-		color: $mainColor
+		@include side-left
 		font-size: 40px
 		letter-spacing: 0.15em
 		font-weight: 300
 		line-height: 20px
 		margin-bottom: 40px
-		text-align: center
-		padding: 30px
-		border: 1px solid #f13e3e
+		padding: 20px  0 0 70px
 		text-transform:  uppercase
 		@include side-centre
 
 	.intro-title
 		color: $mainColor
 		font-size: 40px
-		letter-spacing: 0.15em
+		letter-spacing: 0.15
 		font-weight: 500
 		line-height: 40px
 		margin-bottom: 20px
-		border: 1px solid $warningColor
+		border: 1px solid $warningBlackColor
 		text-shadow: 1px 1px 2px #444
 
 .intro-img-box
-	box-shadow: 10px 5px 5px black
+	box-shadow: 10px 5px 5px #fec544
 	max-height: 600px
 	border-radius: 10px
+	animation: rotate 2s 0s linear
+
+.header-title
+	position: relative
+	z-index: 102
+	font-size: 75px
+	line-height: 1.5
+	font-weight: 600
+	@include side-left
+	left: 10%
 
