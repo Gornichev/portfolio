@@ -237,6 +237,12 @@ body {
   right: 0;
   left: 0;
 }
+.nav-group .logo {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  left: 18%;
+}
 .nav-group .icon-menu {
   text-decoration: none;
   color: #f3e9e9;
@@ -325,12 +331,12 @@ body {
   background: -webkit-linear-gradient(left, #fec544, #fff8f8 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0.13);
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 0.15em;
   font-weight: 300;
-  line-height: 20px;
-  margin-bottom: 40px;
-  padding: 20px 0 0 70px;
+  line-height: 22px;
+  margin-bottom: 35px;
+  padding: 50px 0 0 70px;
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -339,7 +345,7 @@ body {
 .intro .intro-title {
   color: #a9a4a4;
   font-size: 40px;
-  letter-spacing: 0.15;
+  letter-spacing: 0.15px;
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 20px;
