@@ -304,6 +304,7 @@ body {
   left: 18%;
   -webkit-transition: 1s ease;
   overflow: hidden;
+  opacity: 0.3;
 }
 .nav-group .icon-menu {
   text-decoration: none;
