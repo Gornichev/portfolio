@@ -5,6 +5,10 @@ var swiper = new Swiper(".swiper-gallery", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
 });
 const swiper2 = new Swiper(".swiper-gallery-vertical", {
     direction: "vertical",
@@ -12,6 +16,10 @@ const swiper2 = new Swiper(".swiper-gallery-vertical", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
 })
 // navigation
@@ -31,3 +39,4 @@ hideMenu.onclick = function() {
     body.classList.remove("overlay");
     menu.classList.remove("show");
 }
+
