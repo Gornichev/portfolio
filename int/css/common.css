@@ -479,10 +479,11 @@ body {
   line-height: 30px;
   font-size: 13px;
   text-decoration: none;
+  -webkit-transition: 1s ease;
 }
 .nav-group .nav-header .figure:hover {
   background-color: #fec544;
-  transition: 0.5s;
+  transition: 1s;
   -moz-box-shadow: 0 0 5px #000;
   -webkit-box-shadow: 0 0 10px #fec544;
   text-shadow: 0 0 5px #000;
@@ -554,7 +555,7 @@ body {
   box-shadow: 10px 5px 5px #fec544;
   max-height: 600px;
   border-radius: 10px;
-  -webkit-transition: 2s ease;
+  -webkit-transition: 1s ease;
   opacity: 0.85;
 }
 
