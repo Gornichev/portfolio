@@ -406,6 +406,17 @@ body {
   opacity: 0.7;
   overflow: hidden;
 }
+.nav-group .title-menu-only {
+  padding-left: 20px;
+  z-index: 102;
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 600;
+  text-shadow: 2px -1px 1px rgba(68, 68, 68, 0.7);
+  background: -webkit-linear-gradient(left, #fec544, #fff8f8 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.13);
+}
 .nav-group .logo {
   position: relative;
   left: 18%;
@@ -440,7 +451,7 @@ body {
   color: #a9a4a4;
 }
 .nav-group .nav-header .nav-menu-link {
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: 0.15em;
   font-weight: 500;
   line-height: 20px;
@@ -448,6 +459,7 @@ body {
   text-shadow: 1px 1px 2px #444;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000003b;
+  -webkit-transition: 2s ease;
 }
 .nav-group .nav-header .nav-menu-link:hover {
   background-color: #fec544;
@@ -471,6 +483,9 @@ body {
 .nav-group .nav-header .figure:hover {
   background-color: #fec544;
   transition: 0.5s;
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 10px #fec544;
+  text-shadow: 0 0 5px #000;
 }
 
 .section-background {
