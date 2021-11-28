@@ -1,0 +1,110 @@
+@import "variables"
+@import "mixin"
+
+#btn-show-menu
+	line-height: 1.2
+	-webkit-transition: all .12s linear
+	-moz-transition: all .12s linear
+	-o-transition: all .12s linear
+	transition: all .12s linear
+	cursor: pointer
+
+
+#btn-show-menu.hide
+	opacity: 0
+
+
+.overlay
+	overflow: hidden
+	z-index: 100
+
+
+.overlay:before
+	content: ""
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(0,0,0,.2)
+	z-index: 101
+	-webkit-transition: all .12s linear
+	-moz-transition: all .12s linear
+	-o-transition: all .12s linear
+	transition: all .12s linear
+
+
+#menu
+	padding: 87px 30px 30px
+	width: 320px
+	height: 100%
+	background-color: #fff
+	transform: translateX(320px)
+	position: fixed
+	z-index: 102
+	top: 0
+	right: 0
+	bottom: 0
+	-webkit-transition: all .12s linear
+	-moz-transition: all .12s linear
+	-o-transition: all .12s linear
+	transition: all .12s linear
+
+
+#menu.show
+	transform: translateX(0)
+
+
+#menu #btn-hide-menu
+	width: 44px
+	height: 44px
+	line-height: 1
+	text-align: center
+	position: absolute
+	top: 44px
+	left: 248px
+	font-size: 14px
+	cursor: pointer
+	background-color: #f9d15c
+	color: #262833
+	border-radius: 50%
+	-webkit-transition: all .12s linear
+	-moz-transition: all .12s linear
+	-o-transition: all .12s linear
+	transition: all .12s linear
+
+#menu #btn-hide-menu .icon
+	font-size: 12px
+	line-height: 44px
+
+
+.burger
+	list-style-type: none
+	display: flex
+	flex-direction: column
+
+
+.burger li + li
+	margin-top: 8px
+
+
+.burger li a
+	font-size: 16px
+	font-weight: normal
+	color: #333
+	text-decoration: none
+	-webkit-transition: all .12s linear
+	-moz-transition: all .12s linear
+	-o-transition: all .12s linear
+	transition: all .12s linear
+
+
+.burger li a:hover
+	color: #249ac2
+
+#menu .burger .btn
+	padding: 0
+
+#menu .burger .btn .icon
+	margin-right: 7px
+	margin-top: 0

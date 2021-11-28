@@ -16,7 +16,18 @@
     <link rel="stylesheet" href="int/css/common.css">
 </head>
 <body>
-
+<!--boorger-menu-->
+<div id="menu">
+    <span id="btn-hide-menu"><i class="icon icon-close"></i></span>
+    <ul class="burger">
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<!--boorger-menu-->
 <header class="header">
     <div class="container">
         <div class="nav-group">
@@ -34,27 +45,7 @@
                             <li><a class="nav-menu-link d-none d-lg-block"  href="">Contact</a></li>
                             <li><a href="#" class="figure d-none d-md-block">UA</a></li>
                             <li><a href="#" class="figure d-none d-md-block">EN</a></li>
-                            <li>
-                                <p>
-                                    <a class="icon-menu d-lg-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                        Menu
-                                    </a>
-                                </p>
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
-                                        <ul class="burger">
-                                            <li><a href="#">Popular destinations</a></li>
-                                            <li><a href="#">Accommodation rules</a></li>
-                                            <li><a  href="#">Booking rules</a></li>
-                                            <li><a href="#">Promotions and discounts</a></li>
-                                            <li><a class="d-lg-none" href="#">Facilities</a></li>
-                                            <li><a class="d-lg-none" href="#">About Us</a></li>
-                                            <li><a class="d-sm-none" href="#">Location</a></li>
-                                            <li><a class="d-sm-none" href="#">Booking</a></li>
-                                            <li><a class="d-sm-none" href="#">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <li><a id="#btn-show-menu" class="icon-menu d-lg-none">Menu</a>
                             </li>
                         </ul>
                     </nav>
@@ -64,7 +55,7 @@
         <div class="section-background">
             <div class="background">
                 <div class="section-video-background">
-                    <div class="background-overlay"></div>
+<!--                    <div class="background-overlay"></div>-->
                     <video id="videos" autoplay muted loop class="video-background user-none d-none d-lg-block" src="int/img/video/back.mp4">
                         <source src="int/img/video/" type="video/mp4">
                         <source src="int/img/video/" type="video/webm">
