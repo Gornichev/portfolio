@@ -183,7 +183,7 @@ a.btn-reload {
   width: 350px;
   text-decoration: none;
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
   display: block;
   background-image: linear-gradient(to left, transparent, transparent 50%, #000000 50%, #fec544);
   background-position: 100% 0;
@@ -293,6 +293,8 @@ body {
   top: 0;
   right: 0;
   left: 0;
+  opacity: 0.7;
+  overflow: hidden;
 }
 .nav-group .logo {
   position: relative;
@@ -446,6 +448,40 @@ body {
   background: -webkit-linear-gradient(left, #fec544, #fff8f8 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0.13);
+}
+
+.section-slider-gallery {
+  position: relative;
+  background-color: #f3e9e9;
+  margin-top: -100px;
+}
+.section-slider-gallery .swiper {
+  width: 100%;
+  height: 100%;
+}
+.section-slider-gallery .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.section-slider-gallery .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=common.css.map */
