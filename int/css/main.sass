@@ -20,20 +20,19 @@ body
 .nav-group
 	padding: 40px 0 20px
 	color: #b8b8c9
-	background: rgba(19, 17, 17, 0.09)
 	border-radius: 0
 	border: none
 	height: 100px
 	font-weight: 300
 	margin-bottom: 0
 	transition: all .3s ease
-	z-index: 101
-	position: fixed
+	z-index: 103
 	top: 0
 	right: 0
 	left: 0
 	opacity: 0.8
 	overflow: hidden
+	position: fixed
 
 	.title-menu-only
 		padding-left: 20px
@@ -120,6 +119,29 @@ body
 			-webkit-box-shadow: 0 0 10px $goldColor
 			text-shadow: 0 0 5px #000
 
+	.overlay-header
+		height: 200px
+		background-color: $introColor
+		display: block
+		transition: 0.5s
+
+#overlay
+	height: 120px
+	display: block
+	background: rgba(19, 17, 17, 0.3)
+	width: 100%
+	position: fixed
+	z-index: 102
+	left: 0
+	right: 0
+
+
+#back
+	z-index: 100
+	bottom: 0
+	right: 0
+	width: 200px
+	height: 50px
 
 .section-background
 	height: 100vh
@@ -239,3 +261,5 @@ body
 			width: 100%
 			height: 100%
 			object-fit: cover
+
+
